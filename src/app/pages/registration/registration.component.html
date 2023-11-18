@@ -1,0 +1,68 @@
+<head>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Employer Information Form</h2>
+    <form>
+        <div class="col-12 text-center"><div class="btn-group">
+            <button type="button" (click)="isJobSeeker = true" class="btn" [ngClass]="isJobSeeker? 'btn-success': 'btn-btn-primary'"  >Job Seeker</button>
+            <button type="button" (click)="isJobSeeker = false" class="btn" [ngClass]="isJobSeeker? 'btn-success': 'btn-btn-primary'" >Employer</button>
+           
+          </div></div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="CompanyName">Company Name</label>
+                <input type="text" class="form-control" id="CompanyName" [(ngModel)]="employerObj.CompanyName" name="CompanyName" />
+            </div>
+            <div class="form-group col-md-6">
+                <label for="EmailId">Email</label>
+                <input type="text" class="form-control" id="EmailId" [(ngModel)]="employerObj.EmailId" name="EmailId" />
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="Mobile">Mobile</label>
+                <input type="text" class="form-control" id="Mobile" [(ngModel)]="employerObj.Mobile" name="Mobile" >
+            </div>
+            <div class="form-group col-md-6">
+                <label for="PhoneNumber">Phone Number</label>
+                <input type="text" class="form-control" id="PhoneNumber" [(ngModel)]="employerObj.PhoneNumber" name="PhoneNumber" >
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="CompanyAddress">Company Address</label>
+            <input type="text" class="form-control" id="CompanyAddress" [(ngModel)]="employerObj.CompanyAddress" name="CompanyAddress" >
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="City">City</label>
+                <input type="text" class="form-control" id="City" [(ngModel)]="employerObj.City" name="City" >
+            </div>
+            <div class="form-group col-md-4">
+                <label for="Province">Province</label>
+                <input type="text" class="form-control" id="Province" [(ngModel)]="employerObj.Province" name="Province" >
+            </div>
+            <div class="form-group col-md-4">
+                <label for="BIRcode">BIR Code</label>
+                <input type="text" class="form-control" id="BIRcode" [(ngModel)]="employerObj.BIRcode" name="BIRcode" >
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ORnumber">OR Number</label>
+            <input type="text" class="form-control" id="ORnumber" [(ngModel)]="employerObj.ORnumber" name="ORnumber" >
+        </div>
+        <button (click)="register" class="btn btn-primary">Submit</button>
+        <!-- <button (click)="" class="btn btn-success">Register</button> -->
+    
+  
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
